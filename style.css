@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  grid-template-columns: 100px 50px 100;
+  grid-template-rows: 80px auto 80px; 
+  column-gap: 10px;
+  row-gap: 15px;
+  background: #fcd5ce;
+}
+
+.location, .search {
+  text-align: center;
+}
+
+::placholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+}
+
+.container {
+  background-image: url("https://images.unsplash.com/photo-1566422421794-94350f1e4143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Ymx1ZSUyMHNraWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");  
+  font-size: .75em;
+  width: 45%;
+  padding: 15px 15px;
+  margin: auto;
+  border-radius: 10px;
+  border: 5px solid white;
+  margin-top: 25px;
+  border-radius: 2em;
+}
+
+span {
+  position: absloute;
+  top: 10%;
+}
+
+#weather-conditions, .min, .max {
+  font-size: 1em;
+  font-family: 'Space Mono', monospace;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-location {
+  margin: auto;
+}
+
+.map {
+  width: 1.5em;
+}
+
+.time {
+  color: sliver;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: bold; 
+}
+
+input {
+  margin: auto;
+  width: 50%;
+  height: 35px;  
+  border-radius: 1em;
+  padding: 5px 22px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
+}
+
+input:hover {
+  border-color: white;  
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 1em;
+  border-radius: .75em; 
+  cursor: pointer;
+  padding: 3px 10px;
+  border: 2px solid white;
+  background-color: skyblue;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+button:hover {
+  box-shadow: rgba(0, 119, 182, 0.4) 0px 5px, rgba(0, 119, 182, 0.3) 0px 10px, rgba(0, 119, 182, 0.2) 0px 15px, rgba(0, 119, 182, 0.1) 0px 20px, rgba(0, 119, 182, 0.05) 0px 25px;
+  transform: translateY(-5px);
+}
+
+.description {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.weather {
+  width: 2em; 
+}
+
+.cloud {
+  width: 6em; 
+}
+fa-map-marker-alt {
+  width: 10px;
+}
+
+.city-name {
+  font-weight: 700; 
+}
+
+.city-temp {
+  font-size: 4.75em;
+  font-weight: bold;
+}
+
+.icon {
+  border-radius: 2em;
+  background-color: skyblue;
+  border: 3px solid white;
+}
+
+#min, #max, #humidity, #wind, #barometer{
+  width: 2.5em;
+}
+
+.toggle-btn {
+  width: 45px;
+  height: 20px;
+  background-color: grey;
+  color: white;
+  border-radius: 2em;
+  padding: 7px;
+  transition: 1s ease-in-out;
+  border: 2px solid white;
+}
+
+.toggle-btn.active {
+  background-color: skyblue; 
+  color: black;
+}
+
+.toggle-btn.active > .inner-circle {
+  margin-left: 21px;
+  transition: 1s ease-in-out;
+}
+
+.inner-circle {
+  position: relative;
+  top: -88%;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 2em;
+  transition: 1s ease-in-out;
+  padding: 1px 2px;
+  margin-left: -2px;
+}
+
+span {
+  margin-left: 20px;
+}
+
+.weather-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.min, .max {
+   display: inline-block; 
+}
+
+@media (max-width: 800px) {
+  .weather-icons{
+    flex-direction: column;
+  }
+}
+
+#weather-conditions {
+   display: inline-block; 
+   margin-left: 40px;
+}
+
+@media (max-width: 800px) {
+  .container{
+    width: 90%;
+  }
+  #weather-conditions{
+    color: black;
+  }
+}
