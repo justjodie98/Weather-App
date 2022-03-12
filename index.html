@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href=".css"/>
+    
+    <script src="https://kit.fontawesome.com/74fdd7c417.js" crossorigin="anonymous"></script>
+    <script src="moment.js"></script>
+    <script src="moment-timezone-with-data.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+ 
+ <body>
+   <div class= "search">
+      <input type="text" class= "search-bar" placeholder= "Enter any city...">
+      <button type="submit" class= "search-btn">Search</button>
+ </div>
+   <div class = "container">
+      <h4 class="time">Time</h4>
+      <h1 class="city-name">What's the weather like today in...</h1>
+      <img class="icon" src="http://openweathermap.org/img/wn/01d@2x.png"</img>
+   <p class= "city-temp">__<span>°C</span></p> 
+      <h3 class="description"><h3>
+ <hr> 
+    <div class= "temps">
+      <img id="min" src="images/cold.png">
+      <h5 class="min">Min: __°C</h5>
+      <img id="max" src="images/high-temperature.png">
+      <h5 class="max">Max: __°C</h5>
+    </div>
+    
+     <div class="weather-icons"> 
+      <img id="humidity" src="images/humidity.png">
+      <img id="wind" src="images/wind.png">
+      <img id="barometer" src="images/barometer.png">
+    </div>
+      <p id="weather-conditions" class="humidity">Humidity: __%</p>
+      <p id="weather-conditions" class="wind">Wind speed: __m/s</p>
+      <p id="weather-conditions" class="pressure">Pressure: __hPa</p>
+   </hr>
+  <div class="toggle-btn" onClick="this.classList.toggle('active')">°C &nbsp; °F
+    <div class="inner-circle">
+ </div>
+</div>
+        </div>      
+      
+        <script src="main.js"></script>
+  </body>
+</html>
